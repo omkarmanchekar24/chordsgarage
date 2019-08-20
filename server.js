@@ -6,19 +6,18 @@ const profile = require("./routes/api/profile");
 
 const app = express();
 
-//DB Config
+// DB Config
 const db = require("./config/keys").mongoURI;
 
-//Connect to MongoDB
+// Connect to MongoDB
 mongoose
   .connect(db)
-  .then(() => console.log("MongoDB connected successfully"))
-  .catch(err => console.log(err.db));
+  .then(() => console.log("MongoDB Connected"))
+  .catch(err => console.log(err));
 
-app.get("/", (req, res) => res.send("ChordsGarage!!"));
+app.get("/", (req, res) => res.send("Chordsgarage is cool"));
 
-//Use Routes
-
+// Use Routes
 app.use("/api/users", users);
 app.use("/api/profile", profile);
 

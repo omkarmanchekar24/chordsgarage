@@ -1,7 +1,7 @@
 {
   "name": "chordsgarage",
   "version": "1.0.0",
-  "description": "Song notations for musicians.",
+  "description": "Song notations for musicians",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
